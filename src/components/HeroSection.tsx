@@ -90,7 +90,7 @@ export default function HeroSection() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 hover:border-emerald-500/50 hover:bg-emerald-500/15 transition-all duration-300">
                 <Zap className="w-4 h-4 text-emerald-400" />
                 <span className="text-sm font-semibold text-emerald-300">
-                  Introducing CodeTutor AI
+                  Introducing AI Code Helper
                 </span>
               </div>
             </motion.div>

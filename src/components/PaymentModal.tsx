@@ -84,7 +84,7 @@ export default function PaymentModal({
 
       if (payment.status === "completed") {
         // Record purchase in storage
-        const purchases = JSON.parse(localStorage.getItem("codetutor_purchases") || "[]");
+        const purchases = JSON.parse(localStorage.getItem("aicode_helper_purchases") || "[]");
         purchases.push({
           id: `purch_${Date.now()}`,
           userId,
@@ -93,10 +93,10 @@ export default function PaymentModal({
           price: course.price,
           paymentId: payment.id,
         });
-        localStorage.setItem("codetutor_purchases", JSON.stringify(purchases));
+        localStorage.setItem("aicode_helper_purchases", JSON.stringify(purchases));
 
         // Add enrollment
-        const enrollments = JSON.parse(localStorage.getItem("codetutor_enrollments") || "[]");
+        const enrollments = JSON.parse(localStorage.getItem("aicode_helper_enrollments") || "[]");
         const exists = enrollments.some(
           (e: any) => e.userId === userId && e.courseId === course.id
         );
@@ -107,7 +107,7 @@ export default function PaymentModal({
             enrolledAt: new Date().toISOString(),
             isPaid: true,
           });
-          localStorage.setItem("codetutor_enrollments", JSON.stringify(enrollments));
+          localStorage.setItem("aicode_helper_enrollments", JSON.stringify(enrollments));
         }
 
         onSuccess();

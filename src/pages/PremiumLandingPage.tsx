@@ -281,7 +281,7 @@ export default function PremiumLandingPage() {
               Loved by Developers
             </h2>
             <p className="text-lg text-gray-400">
-              Join thousands of developers building better code with CodeTutor AI
+              Join thousands of developers building better code with AI Code Helper
             </p>
           </motion.div>
 
@@ -424,7 +424,7 @@ export default function PremiumLandingPage() {
               Ready to Code Smarter?
             </h2>
             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-              Start using CodeTutor AI today and transform the way you write code.
+              Start using AI Code Helper today and transform the way you write code.
               No credit card required.
             </p>
             <motion.div
@@ -454,7 +454,7 @@ export default function PremiumLandingPage() {
                   <Code2 className="w-5 h-5 text-white" />
                 </div>
                 <span className="text-lg font-bold bg-gradient-to-r from-emerald-300 to-cyan-300 bg-clip-text text-transparent">
-                  CodeTutor
+                  AI Code Helper
                 </span>
               </div>
               <p className="text-gray-400 text-sm">
@@ -559,7 +559,7 @@ export default function PremiumLandingPage() {
           {/* Divider */}
           <div className="border-t border-gray-800/50 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-gray-400 text-sm">
-              © 2024 CodeTutor. All rights reserved.
+              © 2024 AI Code Helper. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a

@@ -1,7 +1,7 @@
 import type { UserProgress, Course, Lesson } from "@/types/course";
 
 // This is a mock implementation. In production, these would use Supabase.
-const PROGRESS_STORAGE_KEY = "codetutor_progress";
+const PROGRESS_STORAGE_KEY = "aicode_helper_progress";
 
 export interface ProgressData {
   lessons: UserProgress[];

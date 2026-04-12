@@ -45,7 +45,7 @@ export default function PremiumNavbar() {
                 <Code2 className="w-5 h-5 text-white" />
               </div>
               <span className="text-lg font-bold bg-gradient-to-r from-emerald-300 via-cyan-300 to-blue-400 bg-clip-text text-transparent hidden sm:inline">
-                CodeTutor
+                AI Code Helper
               </span>
             </Link>
           </motion.div>

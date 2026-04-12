@@ -3,11 +3,11 @@
 import { UserEnrollment, UserBookmark, UserCertificate } from "@/types/course";
 
 const STORAGE_KEYS = {
-  ENROLLMENTS: "codetutor_enrollments",
-  BOOKMARKS: "codetutor_bookmarks",
-  CERTIFICATES: "codetutor_certificates",
-  PROGRESS: "codetutor_progress",
-  PURCHASES: "codetutor_purchases",
+  ENROLLMENTS: "aicode_helper_enrollments",
+  BOOKMARKS: "aicode_helper_bookmarks",
+  CERTIFICATES: "aicode_helper_certificates",
+  PROGRESS: "aicode_helper_progress",
+  PURCHASES: "aicode_helper_purchases",
 };
 
 // ============= ENROLLMENTS =============

@@ -101,7 +101,7 @@ export default function AuthPage() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg gradient-primary">
                 💻
               </div>
-              <span>CodeTutor</span>
+              <span>AI Code Helper</span>
             </Link>
             <p className="text-muted-foreground">
               Join our AI-powered learning community

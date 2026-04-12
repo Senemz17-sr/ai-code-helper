@@ -22,7 +22,7 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
   // Get current user from localStorage (from auth context)
   useEffect(() => {
     try {
-      const authUser = localStorage.getItem("codetutor_user");
+      const authUser = localStorage.getItem("aicode_helper_user");
       if (authUser) {
         const user = JSON.parse(authUser);
         setUserId(user.id);
@@ -43,14 +43,14 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
     const loadSubscription = async () => {
       try {
         // Check localStorage for existing subscription
-        const stored = localStorage.getItem(`codetutor_subscription_${userId}`);
+        const stored = localStorage.getItem(`aicode_helper_subscription_${userId}`);
         if (stored) {
           const sub = JSON.parse(stored);
           setSubscription(sub);
         } else {
           // Create free subscription by default
           const freeSub = createMockSubscription(userId, "free");
-          localStorage.setItem(`codetutor_subscription_${userId}`, JSON.stringify(freeSub));
+          localStorage.setItem(`aicode_helper_subscription_${userId}`, JSON.stringify(freeSub));
           setSubscription(freeSub);
         }
       } finally {
@@ -93,7 +93,7 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
       updatedAt: today.toISOString(),
     };
 
-    localStorage.setItem(`codetutor_subscription_${userId}`, JSON.stringify(premiumSub));
+    localStorage.setItem(`aicode_helper_subscription_${userId}`, JSON.stringify(premiumSub));
     setSubscription(premiumSub);
   };
 

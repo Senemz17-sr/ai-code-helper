@@ -101,7 +101,7 @@ export function useSyncProgress() {
 
   useEffect(() => {
     const handler = (e: StorageEvent) => {
-      if (e.key === "codetutor_progress") {
+      if (e.key === "aicode_helper_progress") {
         refreshData();
       }
     };
